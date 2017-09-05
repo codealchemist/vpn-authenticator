@@ -1,0 +1,33 @@
+{
+  "name": "vpn-authenticator",
+  "version": "1.0.0",
+  "description": "Automatically login to your VPN using 2FA, without the hassle.",
+  "main": "index.js",
+  "bin": {
+    "vpn-authenticator": "./index.js"
+  },
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "intercept-stdout": "^0.1.2",
+    "jfile": "^1.1.12",
+    "just-ask": "^1.0.0",
+    "node-notifier": "^5.1.2",
+    "node-pty": "^0.6.3",
+    "p-series": "^1.0.0",
+    "printii": "^1.0.0",
+    "totp-generator": "0.0.4",
+    "touch": "^1.0.0"
+  },
+  "devDependencies": {
+    "standard-focus": "^1.1.2"
+  },
+  "scripts": {
+    "test": "standard-focus",
+    "start": "node index.js"
+  },
+  "author": "Alberto Miranda",
+  "contributors": [
+    "Leandro Cortese"
+  ],
+  "license": "MIT"
+}

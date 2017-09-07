@@ -15,7 +15,7 @@ npm install -g vpn-authenticator
 `brew install openvpn`
 
  Then try opening a new shell and check if openvpn is accesible:
- `openvpn -v`
+ `openvpn --version`
 
  If it's not you need to create a symlink for it, for example:
  `ln -s /usr/local/Cellar/openvpn/2.4.1/sbin/openvpn /usr/local/sbin/openvpn`
@@ -38,6 +38,21 @@ Download your openvpn credentials file, a .ovpn file.
 Some providers will expose a web login where you can get this file.
 
 Once you have this file you'll have everything you need to do the one time setup of *vpn-authenticator*.
+
+You will also need your account **secret** to complete setup.
+
+If you already configured Authy as Chrome extension to get your OTP, you can easily
+find your secret following this instructions:
+
+- Open Authy and input your password.
+- Open [chrome://extensions](chrome://extensions).
+- Find Authy in the extensions list.
+- Click on `main.html`.
+- Use the following code snippet on the console:
+
+```
+appManager.model.map((app) => console.log(`${app.getName()} => ${app.decryptedSeed}`))
+```
 
 
 ## One Time Setup

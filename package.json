@@ -1,6 +1,6 @@
 {
   "name": "vpn-authenticator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Automatically login to your VPN using 2FA, without the hassle.",
   "main": "index.js",
   "bin": {

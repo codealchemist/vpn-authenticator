@@ -43,7 +43,7 @@ module.exports = class AuthFile {
   }
 
   write (content) {
-    return Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       // Ensure file exists before openvpn tries to write it.
       fs.writeFile(this.authFile, content, {
         encoding: 'utf8',
